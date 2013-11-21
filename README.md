@@ -97,7 +97,7 @@ For block level elements.
 Customizing Feathers
 ----
 
-You can of course override any Feathers CSS declartion inside your own stylesheet, and this is probably the most common and straightfoward path toward customization for a lot of people. However, if you would like to simply change Feathers' default colors, it's easy to do.
+You can of course override any Feathers CSS declaration inside your own stylesheet, and this is probably the most common and straightfoward path toward customization for a lot of people. However, if you would like to simply change Feathers' default colors, it's easy to do.
 
 First, create an initializer file.
 
