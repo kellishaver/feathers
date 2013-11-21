@@ -79,7 +79,7 @@ For block level elements.
 * .avatar
 * .avatar.circle
 * .avatar.framed
-* .note {
+* .note
 * .pagination
 * .progress-bar
 * span.label
@@ -135,7 +135,7 @@ Borders and gradients are calculated automatically based on the defined values f
 ToDo
 ----
 
-* Currently checkbox, radio buttons, and select box stylings are currently webkit only
+* Currently checkbox, radio buttons, and select box stylings are webkit only
 * View Helpers for various Feathers elements
 * JavaScript for better handling of tap states for touch events (`:hover` isn't always accurate)
 * Add a demo and tests (tests don't really make sense until we have view helpers to test)
