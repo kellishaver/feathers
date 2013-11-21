@@ -24,75 +24,10 @@ Now, simply `@import` the feathers you wish to use. They are:
 * `other-widgets` - This is a miscellaneous collection of other common widgets; pagination, avatars, progress bars, labels, notes, title bar, tag lines.
 * `tables` - A nice default for data tables
 
-CSS class names
+CSS Classes & Usage
 ----
 
-I'm just going to make a list. Most are self-explanatory! Feathers tries to avid 'classitis' by applying CSS semantically within widgets.
-
-####Base
-
-* .align-center
-* .align-right
-* .align-left
-* .hidden
-
-####Buttons
-* .button
-* .button.cancel
-* .button.delete
-* .button.info
-* .button.large
-* .button.small
-* .button.success
-* .button.warning
-
-May be combined, e.g. `class="button large info"`.
-
-####Flash Messages
-
-For block level elements.
-
-* .notice
-* .error
-* .note
-* .warning
-
-####Forms
-
-* input.error
-* label.inline
-* label.horizontal
-* span.error-details
-
-####Menus
-
-* .breadcrumbs
-* .drop-menu
-* .drop-menu > ul
-* .icon-bar
-* ul.horizontal-menu
-* ul.link-list
-* ul.vertical-menu
-
-####Other Widgets
-
-* .avatar
-* .avatar.circle
-* .avatar.framed
-* .note
-* .pagination
-* .progress-bar
-* span.label
-* span.label.danger
-* span.label.info
-* span.label.success
-* span.label.warning
-* .tag-line
-* .title-bar
-
-####Tables
-
-* table.data-table
+Check out the full examples here: http://kellishaver.github.io/feathers/
 
 Customizing Feathers
 ----
