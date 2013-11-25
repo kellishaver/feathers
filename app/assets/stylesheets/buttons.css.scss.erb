@@ -59,7 +59,7 @@
   font-size:80%;
 }
 
-.button.info {
+.button.action {
   border:1px solid darken(<%= Feathers::Config.info_element %>, 30%);
   color:<%= Feathers::Config.white %>;
   @include background-gradient(lighten(<%= Feathers::Config.info_element %>, 10%), <%= Feathers::Config.info_element %>);
@@ -68,7 +68,7 @@
   }
 }
 
-.button.info:hover {
+.button.action:hover {
   @include background-gradient(darken(<%= Feathers::Config.info_element %>, 10%), darken(<%= Feathers::Config.info_element %>, 20%));
 }
 
