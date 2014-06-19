@@ -71,6 +71,9 @@ ToDo
 ----
 
 * Currently checkbox, radio buttons, and select box stylings are webkit only
-* View Helpers for various Feathers elements
 * JavaScript for better handling of tap states for touch events (`:hover` isn't always accurate)
-* Add a demo and tests (tests don't really make sense until we have view helpers to test)
+
+Changes
+----
+
+* v0.1.4 - Add support for Rails 4.1
