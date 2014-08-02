@@ -1,65 +1,53 @@
 .breadcrumbs {
-  background:<%= Feathers::Config.light_1 %>;
-  border:1px solid <%= Feathers::Config.light_2 %>;
-  color:<%= Feathers::Config.dark_1 %>;
+  background:<%= Feathers::Config.light %>;
+  border:1px solid darken(<%= Feathers::Config.light %>, 30%);
+  color:<%= Feathers::Config.dark %>;
   padding:1em;
   span {
-    color:<%= Feathers::Config.dark_2 %>;
+    color:darken(<%= Feathers::Config.dark %>, 30%);
   }
 }
 
 .drop-menu {
-  background:<%= Feathers::Config.light_1 %>;
+  background:<%= Feathers::Config.light %>;
   display:inline-block;
   padding:0.5em 1em;
   position:relative;
-  @include border-radius(0.5em);
+  @include border-radius(0.25em);
   ul {
-    background:<%= Feathers::Config.light_1 %>;
+    background:<%= Feathers::Config.light %>;
     display:none;
-    left:0.5em;
+    left:0;
     margin:0;
     min-width:12em;
     padding:0;
     position:absolute;
-    top:2.5em;
+    top:2em;
     z-index:1000;
-    @include border-radius(0.5em);
+    @include border-radius(0.25em);
     li {
       list-style:none;
       margin:0;
       padding:0;
       a {
-        background:<%= Feathers::Config.light_1 %>;
+        background:<%= Feathers::Config.light %>;
         display:block;
         padding:0.5em;
       }
       a:hover {
-        color:<%= Feathers::Config.light_1 %>;
-        background:<%= Feathers::Config.dark_1 %>;
-        @include border-radius(0.5em);
+        color:<%= Feathers::Config.light %>;
+        background:<%= Feathers::Config.dark %>;
+        @include border-radius(0.25em);
       }
     }
   }
-  ul:before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-width: 12px;
-    border-style: solid;
-    border-color: transparent transparent <%= Feathers::Config.light_1 %> transparent;
-    top: -24px;
-    left: 1em;
-    z-index:1000;
-  }
 }
 .drop-menu:hover {
-  background:<%= Feathers::Config.medium_1 %>;
+  background:<%= Feathers::Config.medium %>;
   > a {
-    color:<%= Feathers::Config.dark_2 %>;
+    color:<%= Feathers::Config.dark %>;
     i {
-      color:<%= Feathers::Config.dark_2 %>;
+      color:<%= Feathers::Config.dark %>;
     }
   }
   ul {
@@ -78,22 +66,27 @@ ul.horizontal-menu, ul.vertical-menu {
 }
 
 ul.horizontal-menu {
-  background:<%= Feathers::Config.light_1 %>;
+  background:<%= Feathers::Config.light %>;
+  font-weight:bold;
+  height:2em;
+  line-height:2em;
   overflow:hidden;
-  padding:0.5em 0;
-  @include border-radius(0.5em);
+  padding:0;
+  @include border-radius(0.25em);
   li {
     display:inline;
     a {
       display:inline-block;
       float:left;
-      margin:0 0.5em;
+      height:2em;
+      line-height:2em;
+      margin:0;
       padding:0 1em;
     }
     a:hover {
-      background:<%= Feathers::Config.dark_1 %>;
+      background:<%= Feathers::Config.dark %>;
       color:<%= Feathers::Config.white %>;
-      @include border-radius(0.5em);
+      @include border-radius(0.25em);
     }
   }
 }
@@ -103,11 +96,11 @@ ul.vertical-menu {
     margin:0;
     padding:0;
     a {
-      background:<%= Feathers::Config.light_1 %>;
+      background:<%= Feathers::Config.light %>;
       display:block;
       margin-bottom:0.5em;
       padding:0.5em 1em;
-      @include border-radius(0.5em);
+      @include border-radius(0.25em);
       i {
         display:inline-block;
         float:right;
@@ -116,7 +109,7 @@ ul.vertical-menu {
       }
     }
     a:hover {
-      background:<%= Feathers::Config.dark_1 %>;
+      background:<%= Feathers::Config.dark %>;
       color:<%= Feathers::Config.white %>;
       i {
         color:<%= Feathers::Config.white %>;
@@ -127,20 +120,27 @@ ul.vertical-menu {
 }
 
 .icon-bar {
-  border:1px solid <%= Feathers::Config.medium_1 %>;
+  border:1px solid <%= Feathers::Config.medium %>;
   display:block;
   height:3em;
   line-height:2em;
   padding:0.5em;
   text-align:center;
-  @include background-gradient(lighten(<%= Feathers::Config.light_2 %>, 10%), <%= Feathers::Config.light_2 %>);
+  @include background-gradient(lighten(<%= Feathers::Config.light %>, 10%), <%= Feathers::Config.light %>);
   a {
     display:inline-block;
     margin:0 2em;
     i {
       font-size:180%;
-      color:<%= Feathers::Config.dark_1 %>;
+      color:<%= Feathers::Config.dark %>;
       @include text-shadow(1px 1px 1px <%= Feathers::Config.white %>);
+    }
+    i.icon-empty {
+      @include border-radius(0.25em);
+      background:<%= Feathers::Config.dark %>;
+      display:inline-block;
+      height:1em;
+      width:1em;
     }
   }
   a:hover, a:active {
@@ -163,9 +163,9 @@ ul.link-list {
       display:block;
       padding:0.5em;
       margin:0;
-      border-bottom:1px solid <%= Feathers::Config.medium_1 %>;
+      border-bottom:1px solid <%= Feathers::Config.medium %>;
       i {
-        color:<%= Feathers::Config.dark_1 %>;
+        color:<%= Feathers::Config.dark %>;
         display:inline-block;
         float:right;
         line-height:1.5em;
@@ -173,7 +173,7 @@ ul.link-list {
       }
     }
     a:hover {
-      background:<%= Feathers::Config.light_2 %>;
+      background:<%= Feathers::Config.light %>;
     }
   }
   li:last-child {

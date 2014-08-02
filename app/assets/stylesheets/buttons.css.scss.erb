@@ -1,14 +1,22 @@
 @import 'mixins';
 
 .button {
-  border:1px solid darken(<%= Feathers::Config.default_element %>, 30%);
+  border:1px solid darken(<%= Feathers::Config.light %>, 30%);
   display:inline-block;
+  font-weight:bold;
   line-height:1.5em;
   padding:0.25em 0.5em;
-  @include background-gradient(lighten(<%= Feathers::Config.default_element %>, 10%), <%= Feathers::Config.default_element %>);
+  text-align:center;
+  @include background-gradient(lighten(<%= Feathers::Config.light %>, 10%), <%= Feathers::Config.light %>);
   @include border-radius(0.25em);
   i {
     margin-right:0.5em;
+  }
+  i.icon-empty {
+    display:inline-block;
+    height:0.75em;
+    width:0.75em;
+    border:1px solid <%= Feathers::Config.dark %>;
   }
 }
 
@@ -17,22 +25,21 @@
 }
 
 .button:hover {
-  @include background-gradient(darken(<%= Feathers::Config.default_element %>, 10%), darken(<%= Feathers::Config.default_element %>, 20%));
   color:<%= Feathers::Config.white %>;
-  @include background-gradient(darken(<%= Feathers::Config.default_element %>, 10%), darken(<%= Feathers::Config.default_element %>, 20%));
+  @include background-gradient(darken(<%= Feathers::Config.light %>, 10%), darken(<%= Feathers::Config.light %>, 20%));
   i {
     color:<%= Feathers::Config.white %>;
   }
 }
 
 .button.cancel {
-  border:1px solid darken(<%= Feathers::Config.default_element %>, 30%);
-  @include background-gradient(lighten(<%= Feathers::Config.default_element %>, 10%), <%= Feathers::Config.default_element %>);
+  border:1px solid darken(<%= Feathers::Config.light %>, 30%);
+  @include background-gradient(<%= Feathers::Config.light %>, darken(<%= Feathers::Config.light %>, 10%));
 }
 
 .button.cancel:hover {
   color:<%= Feathers::Config.white %>;
-  @include background-gradient(darken(<%= Feathers::Config.default_element %>, 10%), darken(<%= Feathers::Config.default_element %>, 20%));
+  @include background-gradient(darken(<%= Feathers::Config.light %>, 20%), darken(<%= Feathers::Config.light %>, 30%));
   i {
     color:<%= Feathers::Config.white %>;
   }
@@ -44,6 +51,9 @@
   @include background-gradient(lighten(<%= Feathers::Config.danger_element %>, 10%), <%= Feathers::Config.danger_element %>);
   i {
     color:<%= Feathers::Config.white %>;
+  }
+  i.icon-empty {
+    border:1px solid #fff;
   }
 }
 
@@ -66,6 +76,9 @@
   i {
     color:<%= Feathers::Config.white %>;
   }
+  i.icon-empty {
+    border:1px solid #fff;
+  }
 }
 
 .button.action:hover {
@@ -79,6 +92,9 @@
   i {
     color:<%= Feathers::Config.white %>;
   }
+  i.icon-empty {
+    border:1px solid #fff;
+  }
 }
 
 .button.success:hover {
@@ -91,6 +107,9 @@
   color:<%= Feathers::Config.white %>;
   i {
     color:<%= Feathers::Config.white %>;
+  }
+  i.icon-empty {
+    border:1px solid #fff;
   }
 }
 

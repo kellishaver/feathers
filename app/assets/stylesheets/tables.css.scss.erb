@@ -3,28 +3,33 @@
 table.data-table {
   thead {
     th {
-      border-bottom:1px solid <%= Feathers::Config.medium_1 %>;
-      border-right:1px solid <%= Feathers::Config.medium_1 %>;
-      border-top:1px solid <%= Feathers::Config.medium_1 %>;
-      color:<%= Feathers::Config.dark_2 %>;
+      border-bottom:1px solid <%= Feathers::Config.medium %>;
+      border-right:1px solid <%= Feathers::Config.medium %>;
+      border-top:1px solid <%= Feathers::Config.medium %>;
+      color:<%= Feathers::Config.dark %>;
       font-weight:bold;
       text-align:left;
-      @include background-gradient(lighten(<%= Feathers::Config.default_element %>, 10%), <%= Feathers::Config.default_element %>);
+      padding:0.25em;
+      @include background-gradient(lighten(<%= Feathers::Config.light %>, 10%), <%= Feathers::Config.light %>);
     }
     th:first-child {
-      border-left:1px solid <%= Feathers::Config.medium_1 %>;
+      border-left:1px solid <%= Feathers::Config.medium %>;
     }
   }
   tbody {
     td {
-      border-bottom:1px solid <%= Feathers::Config.light_2 %>;
+      border-bottom:1px solid <%= Feathers::Config.light %>;
+      padding:0.25em;
     }
     tr:hover {
       background:<%= Feathers::Config.highlight %>;
     }
   }
   tfoot {
-    background:<%= Feathers::Config.light_2 %>;
-    color:<%= Feathers::Config.dark_1 %>;
+    background:<%= Feathers::Config.light %>;
+    color:<%= Feathers::Config.dark %>;
+    th, td {
+      padding:0.25em;
+    }
   }
 }

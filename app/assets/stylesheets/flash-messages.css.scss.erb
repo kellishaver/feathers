@@ -5,6 +5,11 @@ div.notice, div.error, div.note, div.warning {
   i {
     margin-right:1em;
   }
+  i.icon-empty {
+    display:inline-block;
+    height:1em;
+    width:1em;
+  }
 }
 
 div.error {
@@ -12,6 +17,9 @@ div.error {
   border:2px solid darken(<%= Feathers::Config.error_background %>, 10%);
   i {
     color:darken(<%= Feathers::Config.error_background %>, 50%);
+  }
+  i.icon-empty {
+    background:darken(<%= Feathers::Config.error_background %>, 50%);
   }
 }
 
@@ -21,6 +29,9 @@ div.notice {
   i {
     color:darken(<%= Feathers::Config.notice_background %>, 50%);
   }
+  i.icon-empty {
+    background:darken(<%= Feathers::Config.notice_background %>, 50%);
+  }
 }
 
 div.warning {
@@ -28,6 +39,9 @@ div.warning {
   border:2px solid darken(<%= Feathers::Config.warning_background %>, 30%);
   i {
     color:darken(<%= Feathers::Config.warning_background %>, 50%);
+  }
+  i.icon-empty {
+    background:darken(<%= Feathers::Config.warning_background %>, 50%);
   }
 }
 

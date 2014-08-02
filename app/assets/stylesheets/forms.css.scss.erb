@@ -17,7 +17,7 @@ fieldset, div.field, div.actions {
   input[type=search],
   input[type=password] {
     background:<%= Feathers::Config.white %>;
-    border:1px solid <%= Feathers::Config.medium_1 %>;
+    border:1px solid <%= Feathers::Config.medium %>;
     padding:0.5em;
     @include border-radius(0.25em);
   }
@@ -62,11 +62,17 @@ fieldset, div.field, div.actions {
     input[type=checkbox]:checked {
       background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAoCAYAAAD+MdrbAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAWtJREFUeNrslU2LglAUhl/lUou2LhWCdubGsk1B/oKZHzvTDwgEd4lFm0Aoog8XgpswXVjTvaD0Nc2YzjAMvosr5yIP77n33HO44/GIIkXownHcSxGwk7l3cha85YGdTL3SL4+CVQJLYAksgb8DJNf9LK+4okfAz6T8v2dKGIbFnOHhcIBlWRiNRvmBcRxjOBxiOp2iWq3er8MMB89g6/WaxZVKJZ9D6iqBUe33++eBruvCtu2bvadSjqIIhmHg/GU1Gg10Op2vHXqeh8FggOVyme5NJpOL9FRVRa/XuzlDcu2CloHjOCwej8eQJAm73Q6z2Sz9r91uo9lsPu42VNvtFpvNJo1938d8PsdqtWJ1RyXL8qewG2C9XocoijBNE4vFgu3R4k1SFQQBrVYrW7chhKDf70NRFBYHQcAughawruvgef659kWd0PQSdbtd1Gq173fse9I0LX239HIyjYBH0Cxd/e/PlA8BBgA6gpuyV9X9zQAAAABJRU5ErkJggg==) bottom left no-repeat;
     }
+
+    input[type=radio], input[type=checkbox] {
+      outline:none;
+      position:relative;
+      top:0.3em;
+    } 
   }
 
   legend {
-    background:<%= Feathers::Config.light_1 %>;
-    color:<%= Feathers::Config.dark_1 %>;
+    background:<%= Feathers::Config.light %>;
+    color:<%= Feathers::Config.dark %>;
     padding:0.5em;
     @include border-radius(0.25em);
   }
@@ -76,7 +82,7 @@ fieldset, div.field, div.actions {
     -moz-appearance:none;
     appearance:none;
     background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAH1JREFUeNqkUTsKwCAMNaGDk4qDoGcQZwdHj+1pHLyFpE6l1P5o3xRCHu8TICL2Fch+YNmmUkpr7fSIc55Scs4d9rC3PfMBwBjjvbfWIuIdeeYrpYam1vpV5pzzZk8IEUIY/KvMcNr20O+9xxillHeN0QVqrfQE+PPnVYABAAwmZGpbdzcOAAAAAElFTkSuQmCC) 100% 50% no-repeat <%= Feathers::Config.white %>;
-    border:1px solid <%= Feathers::Config.medium_1 %>;
+    border:1px solid <%= Feathers::Config.medium %>;
     line-height:1.25em;
     min-width:16em;
     padding:0.5em 3em 0.5em 0.5em;
@@ -87,7 +93,7 @@ fieldset, div.field, div.actions {
     -webkit-appearance:none;
     -moz-appearance:none;
     appearance:none;
-    border:1px solid <%= Feathers::Config.medium_1 %>;
+    border:1px solid <%= Feathers::Config.medium %>;
     line-height:1.25em;
     padding:0.5em;
     @include border-radius(0.25em);
@@ -119,11 +125,11 @@ form {
 
 input[type=reset], input[type=submit], input[type=button] {
   display:inline-block;
-  border:1px solid darken(<%= Feathers::Config.default_element %>, 30%);
+  border:1px solid darken(<%= Feathers::Config.light %>, 30%);
   display:inline-block;
   line-height:1.5em;
   padding:0.25em 0.5em;
-  @include background-gradient(lighten(<%= Feathers::Config.default_element %>, 10%), <%= Feathers::Config.default_element %>);
+  @include background-gradient(<%= Feathers::Config.light %>, darken(<%= Feathers::Config.light %>, 10%));
   @include border-radius(0.25em);
   -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
   -moz-tap-highlight-color:rgba(0, 0, 0, 0);

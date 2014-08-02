@@ -43,18 +43,14 @@ Then simply override the Feathers color presets. You can change any or all value
     module Feathers
       class Config
 
-        @light_1 = "#efefef"
-        @light_2 = "#ddd"
-        @medium_1 = "#ccc"
-        @medium_2 = "#aaa"
-        @dark_1 = "#777"
+        @light = "#efefef"
+        @medium = "#ccc"
         @dark_2 = "#444"
         @highlight = "#ffe"
         @notice_background = "#ecffd6"
         @warning_background = "#fbefb9"
         @error_background = "#ffebeb"
         @note_background = "#d8f2ff"
-        @default_element = "#ccc"
         @danger_element = "#cf0404"
         @info_element = "#448ccb"
         @success_element = "#7ba900"
@@ -76,4 +72,22 @@ ToDo
 Changes
 ----
 
-* v0.1.4 - Add support for Rails 4.1
+####v0.2.0
+* Cleaned up typography / resets
+* Headings now use Apple system default font where available
+* Placeholders or all icons, instead of Font Awesome
+* Restyled dropdown menu slighlty
+* Restyled horizontal nav bar
+* Toned down border radi on all menus
+* Title bar is lighter and now uses Apple system font where available
+* Lightened icon bar
+* Default label now has darker background
+* Added some padding on the default table
+* Fixed vertical alignment on checkboxes and radio buttons
+* Removed `default_element` config color option
+* Consolidated `light_1` and `light_2` config color options to `light`
+* Consolidated `medium_1` and `medium_2` config color options to `medium`
+* Consolidated `dark_1` and `dark_2` config color options to `dark`
+
+####v0.1.4
+* Add support for Rails 4.1
