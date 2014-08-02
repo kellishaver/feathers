@@ -1,194 +1,420 @@
+/* line 1, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+}
 
+/* line 7, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
 ::-moz-selection {
-  background: #444;
+  background: #777;
   color: #fff;
-  text-shadow: none; }
+  text-shadow: none;
+}
 
+/* line 13, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
 ::selection {
-  background: #444;
+  background: #777;
   color: #fff;
-  text-shadow: none; }
+  text-shadow: none;
+}
 
+/* line 19, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 27, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+body {
+  background-color: #fff;
+  margin: 0;
+  overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+}
+
+/* line 35, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+/* line 39, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* line 44, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 49, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+[hidden], .hidden {
+  display: none;
+}
+
+/* line 53, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
 a {
-  color: #444;
+  background: transparent;
+  color: #777;
   outline: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -moz-tap-highlight-color: rgba(0, 0, 0, 0);
   -o-tap-highlight-color: rgba(0, 0, 0, 0);
   tap-highlight-color: rgba(0, 0, 0, 0);
-  text-decoration: none; }
+  text-decoration: none;
+}
 
+/* line 64, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
 a:hover {
-  color: #777; }
+  color: #2a2a2a;
+}
 
-.align-center {
-  text-align: center; }
+/* line 68, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
 
-.align-right {
-  text-align: right; }
-
-.align-left {
-  text-align: left; }
-
+/* line 72, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
 blockquote {
   border-left: 3px solid #ccc;
-  color: #444;
+  color: #777;
   margin: 0 1em 0.5em 1em;
-  padding: 1em; }
-  blockquote cite {
-    display: block;
-    text-align: right;
-    font-style: italic;
-    font-weight: bold; }
+  padding: 1em;
+}
+/* line 77, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+blockquote cite {
+  display: block;
+  text-align: right;
+  font-style: italic;
+  font-weight: bold;
+}
 
-body {
-  background-color: #fff;
-  font-family: helvetica, arial, sans-serif;
-  font-size: 16px;
-  font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  line-height: 150%;
-  margin: 0;
-  overflow-scroll: touch;
-  -webkit-overflow-scroll: touch;
-  overflow-y: scroll;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%; }
+/* line 85, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+b, strong {
+  font-weight: bold;
+}
 
-footer, header, nav, section {
-  display: block; }
-
-fieldset, img {
-  border: none; }
-
-form, legend, li {
-  margin: 0;
-  padding: 0; }
-
+/* line 89, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.5rem;
-  margin: 0 0 0.5em 0;
-  padding: 0; }
+  font-family: -apple-system-font, Helvetica, Arial, sans-serif;
+  margin: 16px 0;
+}
 
+/* line 94, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
 h1 {
-  font-size: 200%; }
+  font-size: 2em;
+}
 
+/* line 95, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
 h2 {
-  font-size: 180%; }
+  font-size: 1.75em;
+}
 
+/* line 96, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
 h3 {
-  font-size: 160%; }
+  font-size: 1.5em;
+}
 
+/* line 97, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
 h4 {
-  font-size: 140%; }
+  font-size: 1em;
+}
 
+/* line 98, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
 h5 {
-  font-size: 120%; }
+  font-size: 0.75em;
+}
 
+/* line 99, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
 h6 {
-  font-size: 100%; }
+  font-size: 0.67em;
+}
 
-.hidden {
-  display: none; }
+/* line 101, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+small {
+  font-size: 80%;
+}
 
-hr {
-  border: none;
-  border-bottom: 1px solid #ccc;
-  height: 0;
-  margin: 1em 0;
-  padding: 0; }
+/* line 105, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
 
+/* line 112, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+sup {
+  top: -0.5em;
+}
+
+/* line 116, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 120, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
 i {
-  color: #444; }
+  color: #777;
+}
 
+/* line 124, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+img {
+  border: 0;
+}
+
+/* line 128, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 132, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+figure {
+  margin: 1em 40px;
+}
+
+/* line 136, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+hr {
+  border-bottom: 1px solid #ccc;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 1px;
+}
+
+/* line 143, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+pre {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+/* line 148, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* line 153, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+/* line 159, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+button {
+  overflow: visible;
+}
+
+/* line 163, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+button, select {
+  text-transform: none;
+}
+
+/* line 167, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 172, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+/* line 176, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 181, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
 input, select, textarea {
   color: #444;
   font-family: helvetica, arial, sans-serif;
-  font-size: 0.8em; }
+  font-size: 1em;
+  line-height: normal;
+}
 
+/* line 189, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 195, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 199, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 207, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 211, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 217, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 222, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+textarea {
+  overflow: auto;
+}
+
+/* line 227, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+optgroup {
+  font-weight: bold;
+}
+
+/* line 231, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 236, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+td, th {
+  padding: 0;
+}
+
+/* line 240, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+.align-center {
+  text-align: center;
+}
+
+/* line 244, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+.align-right {
+  text-align: right;
+}
+
+/* line 248, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
+.align-left {
+  text-align: left;
+}
+
+/* line 252, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
 p {
-  margin: 0 0 1em 0; }
+  margin: 0 0 1em 0;
+}
 
-small {
-  font-size: 70%; }
-
+/* line 256, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/base.css.scss.erb */
 ul, ol {
   margin: 0 0 1em 0;
-  padding: 0 0 0 2em; }
+  padding: 0 0 0 2em;
+}
 
+/* line 3, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/buttons.css.scss.erb */
 .button {
-  border: 1px solid gray;
+  border: 1px solid #a3a3a3;
   display: inline-block;
+  font-weight: bold;
   line-height: 1.5em;
   padding: 0.25em 0.5em;
-  background-color: #e6e6e6;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e6e6e6), to(#cccccc));
-  background-image: -webkit-linear-gradient(top, #e6e6e6, #cccccc);
-  background-image: -moz-linear-gradient(top, #e6e6e6, #cccccc);
-  background-image: -ms-linear-gradient(top, #e6e6e6, #cccccc);
-  background-image: -o-linear-gradient(top, #e6e6e6, #cccccc);
-  background-image: linear-gradient(top, #e6e6e6, #cccccc);
+  text-align: center;
+  background-color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#efefef));
+  background-image: -webkit-linear-gradient(top, white, #efefef);
+  background-image: -moz-linear-gradient(top, white, #efefef);
+  background-image: -ms-linear-gradient(top, white, #efefef);
+  background-image: -o-linear-gradient(top, white, #efefef);
+  background-image: linear-gradient(top, white, #efefef);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor);
   -moz-border-radius: 0.25em;
   -webkit-border-radius: 0.25em;
-  border-radius: 0.25em; }
-  .button i {
-    margin-right: 0.5em; }
+  border-radius: 0.25em;
+}
+/* line 12, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/buttons.css.scss.erb */
+.button i {
+  margin-right: 0.5em;
+}
+/* line 15, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/buttons.css.scss.erb */
+.button i.icon-empty {
+  display: inline-block;
+  height: 0.75em;
+  width: 0.75em;
+  border: 1px solid #777;
+}
 
+/* line 23, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/buttons.css.scss.erb */
 .button:active {
   -webkit-box-shadow: "" 0 0 0 rgba(0, 0, 0, 0.4);
   -moz-box-shadow: "" 0 0 0 rgba(0, 0, 0, 0.4);
-  box-shadow: "" 0 0 0 rgba(0, 0, 0, 0.4); }
+  box-shadow: "" 0 0 0 rgba(0, 0, 0, 0.4);
+}
 
+/* line 27, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/buttons.css.scss.erb */
 .button:hover {
-  background-color: #b3b3b3;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#b3b3b3), to(#999999));
-  background-image: -webkit-linear-gradient(top, #b3b3b3, #999999);
-  background-image: -moz-linear-gradient(top, #b3b3b3, #999999);
-  background-image: -ms-linear-gradient(top, #b3b3b3, #999999);
-  background-image: -o-linear-gradient(top, #b3b3b3, #999999);
-  background-image: linear-gradient(top, #b3b3b3, #999999);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor);
   color: #fff;
-  background-color: #b3b3b3;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#b3b3b3), to(#999999));
-  background-image: -webkit-linear-gradient(top, #b3b3b3, #999999);
-  background-image: -moz-linear-gradient(top, #b3b3b3, #999999);
-  background-image: -ms-linear-gradient(top, #b3b3b3, #999999);
-  background-image: -o-linear-gradient(top, #b3b3b3, #999999);
-  background-image: linear-gradient(top, #b3b3b3, #999999);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor); }
-  .button:hover i {
-    color: #fff; }
+  background-color: #d5d5d5;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d5d5d5), to(#bcbcbc));
+  background-image: -webkit-linear-gradient(top, #d5d5d5, #bcbcbc);
+  background-image: -moz-linear-gradient(top, #d5d5d5, #bcbcbc);
+  background-image: -ms-linear-gradient(top, #d5d5d5, #bcbcbc);
+  background-image: -o-linear-gradient(top, #d5d5d5, #bcbcbc);
+  background-image: linear-gradient(top, #d5d5d5, #bcbcbc);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor);
+}
+/* line 30, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/buttons.css.scss.erb */
+.button:hover i {
+  color: #fff;
+}
 
+/* line 35, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/buttons.css.scss.erb */
 .button.cancel {
-  border: 1px solid gray;
-  background-color: #e6e6e6;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e6e6e6), to(#cccccc));
-  background-image: -webkit-linear-gradient(top, #e6e6e6, #cccccc);
-  background-image: -moz-linear-gradient(top, #e6e6e6, #cccccc);
-  background-image: -ms-linear-gradient(top, #e6e6e6, #cccccc);
-  background-image: -o-linear-gradient(top, #e6e6e6, #cccccc);
-  background-image: linear-gradient(top, #e6e6e6, #cccccc);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor); }
+  border: 1px solid #a3a3a3;
+  background-color: #efefef;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(#d5d5d5));
+  background-image: -webkit-linear-gradient(top, #efefef, #d5d5d5);
+  background-image: -moz-linear-gradient(top, #efefef, #d5d5d5);
+  background-image: -ms-linear-gradient(top, #efefef, #d5d5d5);
+  background-image: -o-linear-gradient(top, #efefef, #d5d5d5);
+  background-image: linear-gradient(top, #efefef, #d5d5d5);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor);
+}
 
+/* line 40, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/buttons.css.scss.erb */
 .button.cancel:hover {
   color: #fff;
-  background-color: #b3b3b3;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#b3b3b3), to(#999999));
-  background-image: -webkit-linear-gradient(top, #b3b3b3, #999999);
-  background-image: -moz-linear-gradient(top, #b3b3b3, #999999);
-  background-image: -ms-linear-gradient(top, #b3b3b3, #999999);
-  background-image: -o-linear-gradient(top, #b3b3b3, #999999);
-  background-image: linear-gradient(top, #b3b3b3, #999999);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor); }
-  .button.cancel:hover i {
-    color: #fff; }
+  background-color: #bcbcbc;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#bcbcbc), to(#a3a3a3));
+  background-image: -webkit-linear-gradient(top, #bcbcbc, #a3a3a3);
+  background-image: -moz-linear-gradient(top, #bcbcbc, #a3a3a3);
+  background-image: -ms-linear-gradient(top, #bcbcbc, #a3a3a3);
+  background-image: -o-linear-gradient(top, #bcbcbc, #a3a3a3);
+  background-image: linear-gradient(top, #bcbcbc, #a3a3a3);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor);
+}
+/* line 43, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/buttons.css.scss.erb */
+.button.cancel:hover i {
+  color: #fff;
+}
 
+/* line 48, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/buttons.css.scss.erb */
 .button.delete {
   border: 1px solid #390101;
   color: #fff;
@@ -199,10 +425,18 @@ ul, ol {
   background-image: -ms-linear-gradient(top, #fa0c0c, #cf0404);
   background-image: -o-linear-gradient(top, #fa0c0c, #cf0404);
   background-image: linear-gradient(top, #fa0c0c, #cf0404);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor); }
-  .button.delete i {
-    color: #fff; }
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor);
+}
+/* line 52, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/buttons.css.scss.erb */
+.button.delete i {
+  color: #fff;
+}
+/* line 55, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/buttons.css.scss.erb */
+.button.delete i.icon-empty {
+  border: 1px solid #fff;
+}
 
+/* line 60, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/buttons.css.scss.erb */
 .button.delete:hover {
   background-color: #9d0303;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#9d0303), to(#6b0202));
@@ -211,15 +445,21 @@ ul, ol {
   background-image: -ms-linear-gradient(top, #9d0303, #6b0202);
   background-image: -o-linear-gradient(top, #9d0303, #6b0202);
   background-image: linear-gradient(top, #9d0303, #6b0202);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor); }
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor);
+}
 
+/* line 64, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/buttons.css.scss.erb */
 .button.large {
-  font-size: 125%; }
+  font-size: 125%;
+}
 
+/* line 68, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/buttons.css.scss.erb */
 .button.small {
-  font-size: 80%; }
+  font-size: 80%;
+}
 
-.button.info {
+/* line 72, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/buttons.css.scss.erb */
+.button.action {
   border: 1px solid #1a3d5c;
   color: #fff;
   background-color: #6ca5d6;
@@ -229,11 +469,19 @@ ul, ol {
   background-image: -ms-linear-gradient(top, #6ca5d6, #448ccb);
   background-image: -o-linear-gradient(top, #6ca5d6, #448ccb);
   background-image: linear-gradient(top, #6ca5d6, #448ccb);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor); }
-  .button.info i {
-    color: #fff; }
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor);
+}
+/* line 76, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/buttons.css.scss.erb */
+.button.action i {
+  color: #fff;
+}
+/* line 79, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/buttons.css.scss.erb */
+.button.action i.icon-empty {
+  border: 1px solid #fff;
+}
 
-.button.info:hover {
+/* line 84, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/buttons.css.scss.erb */
+.button.action:hover {
   background-color: #3072ac;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#3072ac), to(#255884));
   background-image: -webkit-linear-gradient(top, #3072ac, #255884);
@@ -241,8 +489,10 @@ ul, ol {
   background-image: -ms-linear-gradient(top, #3072ac, #255884);
   background-image: -o-linear-gradient(top, #3072ac, #255884);
   background-image: linear-gradient(top, #3072ac, #255884);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor); }
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor);
+}
 
+/* line 88, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/buttons.css.scss.erb */
 .button.success {
   border: 1px solid #0c1000;
   color: #fff;
@@ -253,10 +503,18 @@ ul, ol {
   background-image: -ms-linear-gradient(top, #a0dc00, #7ba900);
   background-image: -o-linear-gradient(top, #a0dc00, #7ba900);
   background-image: linear-gradient(top, #a0dc00, #7ba900);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor); }
-  .button.success i {
-    color: #fff; }
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor);
+}
+/* line 92, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/buttons.css.scss.erb */
+.button.success i {
+  color: #fff;
+}
+/* line 95, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/buttons.css.scss.erb */
+.button.success i.icon-empty {
+  border: 1px solid #fff;
+}
 
+/* line 100, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/buttons.css.scss.erb */
 .button.success:hover {
   background-color: #567600;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#567600), to(#314300));
@@ -265,8 +523,10 @@ ul, ol {
   background-image: -ms-linear-gradient(top, #567600, #314300);
   background-image: -o-linear-gradient(top, #567600, #314300);
   background-image: linear-gradient(top, #567600, #314300);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor); }
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor);
+}
 
+/* line 104, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/buttons.css.scss.erb */
 .button.warning {
   border: 1px solid #9c550b;
   background-color: #f6bb7d;
@@ -277,10 +537,18 @@ ul, ol {
   background-image: -o-linear-gradient(top, #f6bb7d, #f3a24d);
   background-image: linear-gradient(top, #f6bb7d, #f3a24d);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor);
-  color: #fff; }
-  .button.warning i {
-    color: #fff; }
+  color: #fff;
+}
+/* line 108, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/buttons.css.scss.erb */
+.button.warning i {
+  color: #fff;
+}
+/* line 111, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/buttons.css.scss.erb */
+.button.warning i.icon-empty {
+  border: 1px solid #fff;
+}
 
+/* line 116, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/buttons.css.scss.erb */
 .button.warning:hover {
   background-color: #f0891d;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f0891d), to(#cc6f0e));
@@ -289,157 +557,233 @@ ul, ol {
   background-image: -ms-linear-gradient(top, #f0891d, #cc6f0e);
   background-image: -o-linear-gradient(top, #f0891d, #cc6f0e);
   background-image: linear-gradient(top, #f0891d, #cc6f0e);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor); }
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor);
+}
 
-table.data-table thead th {
-  border-bottom: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  border-top: 1px solid #ccc;
-  color: #444;
-  font-weight: bold;
-  text-align: left;
-  background-color: #e6e6e6;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e6e6e6), to(#cccccc));
-  background-image: -webkit-linear-gradient(top, #e6e6e6, #cccccc);
-  background-image: -moz-linear-gradient(top, #e6e6e6, #cccccc);
-  background-image: -ms-linear-gradient(top, #e6e6e6, #cccccc);
-  background-image: -o-linear-gradient(top, #e6e6e6, #cccccc);
-  background-image: linear-gradient(top, #e6e6e6, #cccccc);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor); }
-table.data-table thead th:first-child {
-  border-left: 1px solid #ccc; }
-table.data-table tbody td {
-  border-bottom: 1px solid #ddd; }
-table.data-table tbody tr:hover {
-  background: #ffe; }
-table.data-table tfoot {
-  background: #ddd;
-  color: #777; }
+/* line 1, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/flash-messages.css.scss.erb */
+div.notice, div.error, div.note, div.warning {
+  margin: 1em 0;
+  padding: 1em;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+}
+/* line 5, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/flash-messages.css.scss.erb */
+div.notice i, div.error i, div.note i, div.warning i {
+  margin-right: 1em;
+}
+/* line 8, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/flash-messages.css.scss.erb */
+div.notice i.icon-empty, div.error i.icon-empty, div.note i.icon-empty, div.warning i.icon-empty {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+}
 
+/* line 15, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/flash-messages.css.scss.erb */
+div.error {
+  background: #ffebeb;
+  border: 2px solid #ffb8b8;
+}
+/* line 18, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/flash-messages.css.scss.erb */
+div.error i {
+  color: #eb0000;
+}
+/* line 21, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/flash-messages.css.scss.erb */
+div.error i.icon-empty {
+  background: #eb0000;
+}
+
+/* line 26, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/flash-messages.css.scss.erb */
+div.notice {
+  background: #ecffd6;
+  border: 2px solid #8dff0a;
+}
+/* line 29, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/flash-messages.css.scss.erb */
+div.notice i {
+  color: #73d600;
+}
+/* line 32, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/flash-messages.css.scss.erb */
+div.notice i.icon-empty {
+  background: #73d600;
+}
+
+/* line 37, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/flash-messages.css.scss.erb */
+div.warning {
+  background: #fbefb9;
+  border: 2px solid #f3ce28;
+}
+/* line 40, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/flash-messages.css.scss.erb */
+div.warning i {
+  color: #ab8e0a;
+}
+/* line 43, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/flash-messages.css.scss.erb */
+div.warning i.icon-empty {
+  background: #ab8e0a;
+}
+
+/* line 1, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/menus.css.scss.erb */
 .breadcrumbs {
   background: #efefef;
-  border: 1px solid #ddd;
+  border: 1px solid #a3a3a3;
   color: #777;
-  padding: 1em; }
-  .breadcrumbs span {
-    color: #444; }
+  padding: 1em;
+}
+/* line 6, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/menus.css.scss.erb */
+.breadcrumbs span {
+  color: #2a2a2a;
+}
 
+/* line 11, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/menus.css.scss.erb */
 .drop-menu {
   background: #efefef;
   display: inline-block;
   padding: 0.5em 1em;
   position: relative;
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em; }
-  .drop-menu ul {
-    background: #efefef;
-    display: none;
-    left: 0.5em;
-    margin: 0;
-    min-width: 12em;
-    padding: 0;
-    position: absolute;
-    top: 2.5em;
-    z-index: 1000;
-    -moz-border-radius: 0.5em;
-    -webkit-border-radius: 0.5em;
-    border-radius: 0.5em; }
-    .drop-menu ul li {
-      list-style: none;
-      margin: 0;
-      padding: 0; }
-      .drop-menu ul li a {
-        background: #efefef;
-        display: block;
-        padding: 0.5em; }
-      .drop-menu ul li a:hover {
-        color: #efefef;
-        background: #777;
-        -moz-border-radius: 0.5em;
-        -webkit-border-radius: 0.5em;
-        border-radius: 0.5em; }
-  .drop-menu ul:before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-width: 12px;
-    border-style: solid;
-    border-color: transparent transparent #efefef transparent;
-    top: -24px;
-    left: 1em;
-    z-index: 1000; }
+  -moz-border-radius: 0.25em;
+  -webkit-border-radius: 0.25em;
+  border-radius: 0.25em;
+}
+/* line 17, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/menus.css.scss.erb */
+.drop-menu ul {
+  background: #efefef;
+  display: none;
+  left: 0;
+  margin: 0;
+  min-width: 12em;
+  padding: 0;
+  position: absolute;
+  top: 2em;
+  z-index: 1000;
+  -moz-border-radius: 0.25em;
+  -webkit-border-radius: 0.25em;
+  border-radius: 0.25em;
+}
+/* line 28, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/menus.css.scss.erb */
+.drop-menu ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 32, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/menus.css.scss.erb */
+.drop-menu ul li a {
+  background: #efefef;
+  display: block;
+  padding: 0.5em;
+}
+/* line 37, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/menus.css.scss.erb */
+.drop-menu ul li a:hover {
+  color: #efefef;
+  background: #777;
+  -moz-border-radius: 0.25em;
+  -webkit-border-radius: 0.25em;
+  border-radius: 0.25em;
+}
 
+/* line 45, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/menus.css.scss.erb */
 .drop-menu:hover {
-  background: #ccc; }
-  .drop-menu:hover > a {
-    color: #444; }
-    .drop-menu:hover > a i {
-      color: #444; }
-  .drop-menu:hover ul {
-    display: block; }
+  background: #ccc;
+}
+/* line 47, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/menus.css.scss.erb */
+.drop-menu:hover > a {
+  color: #777;
+}
+/* line 49, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/menus.css.scss.erb */
+.drop-menu:hover > a i {
+  color: #777;
+}
+/* line 53, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/menus.css.scss.erb */
+.drop-menu:hover ul {
+  display: block;
+}
 
+/* line 58, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/menus.css.scss.erb */
 ul.horizontal-menu, ul.vertical-menu {
   margin: 0 0 1em 0;
-  padding: 0; }
-  ul.horizontal-menu li, ul.vertical-menu li {
-    list-style: none;
-    margin: 0;
-    padding: 0; }
+  padding: 0;
+}
+/* line 61, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/menus.css.scss.erb */
+ul.horizontal-menu li, ul.vertical-menu li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
+/* line 68, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/menus.css.scss.erb */
 ul.horizontal-menu {
   background: #efefef;
+  font-weight: bold;
+  height: 2em;
+  line-height: 2em;
   overflow: hidden;
-  padding: 0.5em 0;
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em; }
-  ul.horizontal-menu li {
-    display: inline; }
-    ul.horizontal-menu li a {
-      display: inline-block;
-      float: left;
-      margin: 0 0.5em;
-      padding: 0 1em; }
-    ul.horizontal-menu li a:hover {
-      background: #777;
-      color: #fff;
-      -moz-border-radius: 0.5em;
-      -webkit-border-radius: 0.5em;
-      border-radius: 0.5em; }
+  padding: 0;
+  -moz-border-radius: 0.25em;
+  -webkit-border-radius: 0.25em;
+  border-radius: 0.25em;
+}
+/* line 76, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/menus.css.scss.erb */
+ul.horizontal-menu li {
+  display: inline;
+}
+/* line 78, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/menus.css.scss.erb */
+ul.horizontal-menu li a {
+  display: inline-block;
+  float: left;
+  height: 2em;
+  line-height: 2em;
+  margin: 0;
+  padding: 0 1em;
+}
+/* line 86, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/menus.css.scss.erb */
+ul.horizontal-menu li a:hover {
+  background: #777;
+  color: #fff;
+  -moz-border-radius: 0.25em;
+  -webkit-border-radius: 0.25em;
+  border-radius: 0.25em;
+}
 
+/* line 95, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/menus.css.scss.erb */
 ul.vertical-menu li {
   margin: 0;
-  padding: 0; }
-  ul.vertical-menu li a {
-    background: #efefef;
-    display: block;
-    margin-bottom: 0.5em;
-    padding: 0.5em 1em;
-    -moz-border-radius: 0.5em;
-    -webkit-border-radius: 0.5em;
-    border-radius: 0.5em; }
-    ul.vertical-menu li a i {
-      display: inline-block;
-      float: right;
-      line-height: 1.5em;
-      filter: alpha(opacity=20);
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
-      -moz-opacity: 0.2;
-      -khtml-opacity: 0.2;
-      opacity: 0.2; }
-  ul.vertical-menu li a:hover {
-    background: #777;
-    color: #fff; }
-    ul.vertical-menu li a:hover i {
-      color: #fff;
-      filter: alpha(opacity=40);
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
-      -moz-opacity: 0.4;
-      -khtml-opacity: 0.4;
-      opacity: 0.4; }
+  padding: 0;
+}
+/* line 98, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/menus.css.scss.erb */
+ul.vertical-menu li a {
+  background: #efefef;
+  display: block;
+  margin-bottom: 0.5em;
+  padding: 0.5em 1em;
+  -moz-border-radius: 0.25em;
+  -webkit-border-radius: 0.25em;
+  border-radius: 0.25em;
+}
+/* line 104, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/menus.css.scss.erb */
+ul.vertical-menu li a i {
+  display: inline-block;
+  float: right;
+  line-height: 1.5em;
+  filter: alpha(opacity=20);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  -moz-opacity: 0.2;
+  -khtml-opacity: 0.2;
+  opacity: 0.2;
+}
+/* line 111, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/menus.css.scss.erb */
+ul.vertical-menu li a:hover {
+  background: #777;
+  color: #fff;
+}
+/* line 114, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/menus.css.scss.erb */
+ul.vertical-menu li a:hover i {
+  color: #fff;
+  filter: alpha(opacity=40);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  -moz-opacity: 0.4;
+  -khtml-opacity: 0.4;
+  opacity: 0.4;
+}
 
+/* line 122, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/menus.css.scss.erb */
 .icon-bar {
   border: 1px solid #ccc;
   display: block;
@@ -447,111 +791,163 @@ ul.vertical-menu li {
   line-height: 2em;
   padding: 0.5em;
   text-align: center;
-  background-color: #f7f7f7;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#dddddd));
-  background-image: -webkit-linear-gradient(top, #f7f7f7, #dddddd);
-  background-image: -moz-linear-gradient(top, #f7f7f7, #dddddd);
-  background-image: -ms-linear-gradient(top, #f7f7f7, #dddddd);
-  background-image: -o-linear-gradient(top, #f7f7f7, #dddddd);
-  background-image: linear-gradient(top, #f7f7f7, #dddddd);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor); }
-  .icon-bar a {
-    display: inline-block;
-    margin: 0 2em; }
-    .icon-bar a i {
-      font-size: 180%;
-      color: #777;
-      -moz-text-shadow: 1px 1px 1px white 2px 5px rgba(0, 0, 0, 0.4);
-      -webkit-text-shadow: 1px 1px 1px white 2px 5px rgba(0, 0, 0, 0.4);
-      text-shadow: 1px 1px 1px white 2px 5px rgba(0, 0, 0, 0.4); }
-  .icon-bar a:hover i, .icon-bar a:active i {
-    color: #333; }
+  background-color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#efefef));
+  background-image: -webkit-linear-gradient(top, white, #efefef);
+  background-image: -moz-linear-gradient(top, white, #efefef);
+  background-image: -ms-linear-gradient(top, white, #efefef);
+  background-image: -o-linear-gradient(top, white, #efefef);
+  background-image: linear-gradient(top, white, #efefef);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor);
+}
+/* line 130, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/menus.css.scss.erb */
+.icon-bar a {
+  display: inline-block;
+  margin: 0 2em;
+}
+/* line 133, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/menus.css.scss.erb */
+.icon-bar a i {
+  font-size: 180%;
+  color: #777;
+  -moz-text-shadow: 1px 1px 1px white 2px 5px rgba(0, 0, 0, 0.4);
+  -webkit-text-shadow: 1px 1px 1px white 2px 5px rgba(0, 0, 0, 0.4);
+  text-shadow: 1px 1px 1px white 2px 5px rgba(0, 0, 0, 0.4);
+}
+/* line 138, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/menus.css.scss.erb */
+.icon-bar a i.icon-empty {
+  -moz-border-radius: 0.25em;
+  -webkit-border-radius: 0.25em;
+  border-radius: 0.25em;
+  background: #777;
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+}
+/* line 147, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/menus.css.scss.erb */
+.icon-bar a:hover i, .icon-bar a:active i {
+  color: #333;
+}
 
+/* line 153, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/menus.css.scss.erb */
 ul.link-list {
   margin: 0;
   padding: 0;
   overflow-scroll: touch;
-  -webkit-overflow-scroll: touch; }
-  ul.link-list li {
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-    ul.link-list li a {
-      display: block;
-      padding: 0.5em;
-      margin: 0;
-      border-bottom: 1px solid #ccc; }
-      ul.link-list li a i {
-        color: #777;
-        display: inline-block;
-        float: right;
-        line-height: 1.5em;
-        filter: alpha(opacity=20);
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
-        -moz-opacity: 0.2;
-        -khtml-opacity: 0.2;
-        opacity: 0.2; }
-    ul.link-list li a:hover {
-      background: #ddd; }
-  ul.link-list li:last-child a {
-    border-bottom: none; }
+  -webkit-overflow-scroll: touch;
+}
+/* line 158, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/menus.css.scss.erb */
+ul.link-list li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 162, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/menus.css.scss.erb */
+ul.link-list li a {
+  display: block;
+  padding: 0.5em;
+  margin: 0;
+  border-bottom: 1px solid #ccc;
+}
+/* line 167, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/menus.css.scss.erb */
+ul.link-list li a i {
+  color: #777;
+  display: inline-block;
+  float: right;
+  line-height: 1.5em;
+  filter: alpha(opacity=20);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  -moz-opacity: 0.2;
+  -khtml-opacity: 0.2;
+  opacity: 0.2;
+}
+/* line 175, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/menus.css.scss.erb */
+ul.link-list li a:hover {
+  background: #efefef;
+}
+/* line 180, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/menus.css.scss.erb */
+ul.link-list li:last-child a {
+  border-bottom: none;
+}
 
+/* line 1, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/other-widgets.css.scss.erb */
 .avatar {
   width: 64px;
-  height: 64px; }
+  height: 64px;
+}
 
+/* line 6, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/other-widgets.css.scss.erb */
 .avatar.circle {
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
-  border-radius: 100%; }
+  border-radius: 100%;
+}
 
+/* line 10, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/other-widgets.css.scss.erb */
 .avatar.framed {
   background: #fff;
   border: 1px solid #ccc;
-  padding: 3px; }
+  padding: 3px;
+}
 
+/* line 16, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/other-widgets.css.scss.erb */
 .pagination {
-  overflow: hidden; }
-  .pagination a {
-    border: 1px solid #ddd;
-    display: inline-block;
-    float: left;
-    margin-right: 0.5em;
-    padding: 0.25em 0.5em; }
-  .pagination a.current {
-    background: #f6f6f6;
-    color: #777; }
-  .pagination a.disabled {
-    border: none;
-    color: #ccc; }
-  .pagination a:hover {
-    background: #444;
-    color: #fff; }
-  .pagination a.disabled:hover {
-    background: #ccc;
-    color: #fff; }
+  overflow: hidden;
+}
+/* line 18, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/other-widgets.css.scss.erb */
+.pagination a {
+  border: 1px solid #efefef;
+  display: inline-block;
+  float: left;
+  margin-right: 0.5em;
+  padding: 0.25em 0.5em;
+}
+/* line 25, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/other-widgets.css.scss.erb */
+.pagination a.current {
+  border: 1px solid #efefef;
+  color: #777;
+}
+/* line 29, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/other-widgets.css.scss.erb */
+.pagination a.disabled {
+  border: none;
+  color: #ccc;
+}
+/* line 33, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/other-widgets.css.scss.erb */
+.pagination a:hover {
+  background: #777;
+  color: #fff;
+}
+/* line 37, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/other-widgets.css.scss.erb */
+.pagination a.disabled:hover {
+  background: #ccc;
+  color: #fff;
+}
 
+/* line 43, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/other-widgets.css.scss.erb */
 .progress-bar {
   background: #efefef;
   height: 16px;
   margin: 1em 0;
   -moz-border-radius: 1em;
   -webkit-border-radius: 1em;
-  border-radius: 1em; }
-  .progress-bar b {
-    background: #7ba900;
-    color: #fff;
-    display: block;
-    font-size: 80%;
-    height: 16px;
-    line-height: 16px;
-    text-align: center;
-    -moz-border-radius: 1em;
-    -webkit-border-radius: 1em;
-    border-radius: 1em; }
+  border-radius: 1em;
+}
+/* line 48, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/other-widgets.css.scss.erb */
+.progress-bar b {
+  background: #7ba900;
+  color: #fff;
+  display: block;
+  font-size: 80%;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+}
 
+/* line 60, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/other-widgets.css.scss.erb */
 span.label {
-  background: #ccc;
+  background: #777;
   color: #fff;
   font-size: 80%;
   font-weight: bold;
@@ -561,172 +957,289 @@ span.label {
   white-space: nowrap;
   -moz-border-radius: 0.25em;
   -webkit-border-radius: 0.25em;
-  border-radius: 0.25em; }
+  border-radius: 0.25em;
+}
 
+/* line 72, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/other-widgets.css.scss.erb */
 span.label.danger {
-  background: #cf0404; }
+  background: #cf0404;
+}
 
+/* line 73, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/other-widgets.css.scss.erb */
 span.label.info {
-  background: #448ccb; }
+  background: #448ccb;
+}
 
+/* line 74, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/other-widgets.css.scss.erb */
 span.label.success {
-  background: #7ba900; }
+  background: #7ba900;
+}
 
+/* line 75, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/other-widgets.css.scss.erb */
 span.label.warning {
-  background: #f3a24d; }
+  background: #f3a24d;
+}
 
+/* line 77, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/other-widgets.css.scss.erb */
 div.note {
   background: #d8f2ff;
   border: 2px solid #3fbfff;
   color: #003b59;
   margin: 1em 0;
-  padding: 0.5em; }
+  padding: 0.5em;
+}
 
+/* line 85, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/other-widgets.css.scss.erb */
 .tag-line {
   color: #777;
-  font-size: 125%; }
+  font-size: 125%;
+}
 
+/* line 90, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/other-widgets.css.scss.erb */
 .title-bar {
-  border: 1px solid #aaa;
+  border: 1px solid #ccc;
+  font-family: -apple-system-font, Helvetica, Arial, sans-serif;
   padding: 0.5em;
   text-align: center;
-  background-color: #e6e6e6;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e6e6e6), to(#cccccc));
-  background-image: -webkit-linear-gradient(top, #e6e6e6, #cccccc);
-  background-image: -moz-linear-gradient(top, #e6e6e6, #cccccc);
-  background-image: -ms-linear-gradient(top, #e6e6e6, #cccccc);
-  background-image: -o-linear-gradient(top, #e6e6e6, #cccccc);
-  background-image: linear-gradient(top, #e6e6e6, #cccccc);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor); }
-  .title-bar h1 {
-    color: #777;
-    font-size: 180%;
-    margin: 0;
-    -moz-text-shadow: 1px 1px 1px white 2px 5px rgba(0, 0, 0, 0.4);
-    -webkit-text-shadow: 1px 1px 1px white 2px 5px rgba(0, 0, 0, 0.4);
-    text-shadow: 1px 1px 1px white 2px 5px rgba(0, 0, 0, 0.4); }
+  background-color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#efefef));
+  background-image: -webkit-linear-gradient(top, white, #efefef);
+  background-image: -moz-linear-gradient(top, white, #efefef);
+  background-image: -ms-linear-gradient(top, white, #efefef);
+  background-image: -o-linear-gradient(top, white, #efefef);
+  background-image: linear-gradient(top, white, #efefef);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor);
+}
+/* line 96, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/other-widgets.css.scss.erb */
+.title-bar h1 {
+  color: #777;
+  font-size: 180%;
+  font-weight: normal;
+  margin: 0;
+  -moz-text-shadow: 1px 1px 1px white 2px 5px rgba(0, 0, 0, 0.4);
+  -webkit-text-shadow: 1px 1px 1px white 2px 5px rgba(0, 0, 0, 0.4);
+  text-shadow: 1px 1px 1px white 2px 5px rgba(0, 0, 0, 0.4);
+}
 
-div.notice, div.error, div.note, div.warning {
-  margin: 1em 0;
-  padding: 1em;
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em; }
-  div.notice i, div.error i, div.note i, div.warning i {
-    margin-right: 1em; }
+/* line 5, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/tables.css.scss.erb */
+table.data-table thead th {
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  color: #777;
+  font-weight: bold;
+  text-align: left;
+  padding: 0.25em;
+  background-color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#efefef));
+  background-image: -webkit-linear-gradient(top, white, #efefef);
+  background-image: -moz-linear-gradient(top, white, #efefef);
+  background-image: -ms-linear-gradient(top, white, #efefef);
+  background-image: -o-linear-gradient(top, white, #efefef);
+  background-image: linear-gradient(top, white, #efefef);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor);
+}
+/* line 15, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/tables.css.scss.erb */
+table.data-table thead th:first-child {
+  border-left: 1px solid #ccc;
+}
+/* line 20, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/tables.css.scss.erb */
+table.data-table tbody td {
+  border-bottom: 1px solid #efefef;
+  padding: 0.25em;
+}
+/* line 24, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/tables.css.scss.erb */
+table.data-table tbody tr:hover {
+  background: #ffe;
+}
+/* line 28, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/tables.css.scss.erb */
+table.data-table tfoot {
+  background: #efefef;
+  color: #777;
+}
+/* line 31, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/tables.css.scss.erb */
+table.data-table tfoot th, table.data-table tfoot td {
+  padding: 0.25em;
+}
 
-div.error {
-  background: #ffebeb;
-  border: 2px solid #ffb8b8; }
-  div.error i {
-    color: #eb0000; }
+/* line 1, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/forms.css.scss.erb */
+fieldset, div.field, div.actions {
+  margin: 0;
+}
+/* line 4, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/forms.css.scss.erb */
+fieldset input[type=search], div.field input[type=search], div.actions input[type=search] {
+  -webkit-appearance: none;
+}
+/* line 8, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/forms.css.scss.erb */
+fieldset input[type=search]::-webkit-search-decoration,
+fieldset input[type=search]::-webkit-search-cancel-button,
+fieldset input[type=search]::-webkit-search-results-button,
+fieldset input[type=search]::-webkit-search-results-decoration, div.field input[type=search]::-webkit-search-decoration,
+div.field input[type=search]::-webkit-search-cancel-button,
+div.field input[type=search]::-webkit-search-results-button,
+div.field input[type=search]::-webkit-search-results-decoration, div.actions input[type=search]::-webkit-search-decoration,
+div.actions input[type=search]::-webkit-search-cancel-button,
+div.actions input[type=search]::-webkit-search-results-button,
+div.actions input[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+/* line 18, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/forms.css.scss.erb */
+fieldset input[type=text],
+fieldset input[type=email],
+fieldset input[type=tel],
+fieldset input[type=number],
+fieldset input[type=date],
+fieldset input[type=search],
+fieldset input[type=password], div.field input[type=text],
+div.field input[type=email],
+div.field input[type=tel],
+div.field input[type=number],
+div.field input[type=date],
+div.field input[type=search],
+div.field input[type=password], div.actions input[type=text],
+div.actions input[type=email],
+div.actions input[type=tel],
+div.actions input[type=number],
+div.actions input[type=date],
+div.actions input[type=search],
+div.actions input[type=password] {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  -moz-border-radius: 0.25em;
+  -webkit-border-radius: 0.25em;
+  border-radius: 0.25em;
+}
+/* line 25, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/forms.css.scss.erb */
+fieldset input.error, div.field input.error, div.actions input.error {
+  border: 1px solid #ff8585;
+}
+/* line 29, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/forms.css.scss.erb */
+fieldset label, div.field label, div.actions label {
+  display: block;
+  line-height: 2em;
+}
+/* line 34, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/forms.css.scss.erb */
+fieldset label.horizontal, div.field label.horizontal, div.actions label.horizontal {
+  display: inline-block;
+  min-width: 16em;
+}
+/* line 39, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/forms.css.scss.erb */
+fieldset label.inline, div.field label.inline, div.actions label.inline {
+  display: inline-block;
+  margin-right: 2em;
+}
+/* line 42, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/forms.css.scss.erb */
+fieldset label.inline input, div.field label.inline input, div.actions label.inline input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  display: inline-block;
+  float: left;
+  height: 20px;
+  margin-right: 1em;
+  width: 20px;
+}
+/* line 53, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/forms.css.scss.erb */
+fieldset label.inline input[type=radio], div.field label.inline input[type=radio], div.actions label.inline input[type=radio] {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAoCAYAAAD+MdrbAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAjVJREFUeNrsVb1OAkEQ3uOfXCCQaAQsDBQ2xMLkOhtaH8CeR/A17HwEel9DOxILrSwgEH4DCQRy4Z9zvnXv3BPN6bGxYpIJw/x8Nzszu6NZlsVUUug7paZpQfo5IT4iThHrwmQSj4mHxH1KZuMJSGDH9HNWqVRuDMO4yOVy54lEIgvbdDrtdjqdt2q1+lIulx/It0GgAxcAjmwz0SlxqVarPVoeBB/4IsaFIYEhs1K/33+1fknwFaDHLkAi1Mz4TWY/ZGoAQwbMUc3uLJ+EWGAAKyBKeYQG+B0VEYuJcABT6KZfQBGbkgF1ezT8kIjVZUBlZAOaGFq/ICLWlAHHuAF+AUXsWAYc4jr5BRSxQ+fqKR9s5VdP5eOgfX1g//J8kWrn+dK+e7H3eWA11StA+U057JTdwV6v1xZlxhmy12DzLouaXdJX7/P5/JWdfa/XY6PRiM3nc/4/FouxdDrNMpmMc8J6vf5UKBRuSXxGTe0un6BmMliz2WSNRoO1Wi3Wbrc5Q4YONpsQg1jRRKcprp2CzLrdLhsMBsw0TUZH/ehgKMQWiwWXI5GIk6m0Uzo7O2Wz2fBjTiYTDrZarbgODBk62OADnedOmc1mvGbIBJltt1vneJChgw0+8P3/nRKPx3k3o9Eor1kg8PlNyNDBBh/4eu6UYDDIRyOZTDJd11k4HOY6MGToYIMPdF93SkjeKcVi8Rp/0L3lcskNyMbuLGSAZbNZ1yzKO0X5YCu/eoedsj+9CzAANMf9yP7GAVkAAAAASUVORK5CYII=) top left no-repeat;
+}
+/* line 56, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/forms.css.scss.erb */
+fieldset label.inline input[type=radio]:checked, div.field label.inline input[type=radio]:checked, div.actions label.inline input[type=radio]:checked {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAoCAYAAAD+MdrbAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAjVJREFUeNrsVb1OAkEQ3uOfXCCQaAQsDBQ2xMLkOhtaH8CeR/A17HwEel9DOxILrSwgEH4DCQRy4Z9zvnXv3BPN6bGxYpIJw/x8Nzszu6NZlsVUUug7paZpQfo5IT4iThHrwmQSj4mHxH1KZuMJSGDH9HNWqVRuDMO4yOVy54lEIgvbdDrtdjqdt2q1+lIulx/It0GgAxcAjmwz0SlxqVarPVoeBB/4IsaFIYEhs1K/33+1fknwFaDHLkAi1Mz4TWY/ZGoAQwbMUc3uLJ+EWGAAKyBKeYQG+B0VEYuJcABT6KZfQBGbkgF1ezT8kIjVZUBlZAOaGFq/ICLWlAHHuAF+AUXsWAYc4jr5BRSxQ+fqKR9s5VdP5eOgfX1g//J8kWrn+dK+e7H3eWA11StA+U057JTdwV6v1xZlxhmy12DzLouaXdJX7/P5/JWdfa/XY6PRiM3nc/4/FouxdDrNMpmMc8J6vf5UKBRuSXxGTe0un6BmMliz2WSNRoO1Wi3Wbrc5Q4YONpsQg1jRRKcprp2CzLrdLhsMBsw0TUZH/ehgKMQWiwWXI5GIk6m0Uzo7O2Wz2fBjTiYTDrZarbgODBk62OADnedOmc1mvGbIBJltt1vneJChgw0+8P3/nRKPx3k3o9Eor1kg8PlNyNDBBh/4eu6UYDDIRyOZTDJd11k4HOY6MGToYIMPdF93SkjeKcVi8Rp/0L3lcskNyMbuLGSAZbNZ1yzKO0X5YCu/eoedsj+9CzAANMf9yP7GAVkAAAAASUVORK5CYII=) bottom left no-repeat;
+}
+/* line 59, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/forms.css.scss.erb */
+fieldset label.inline input[type=checkbox], div.field label.inline input[type=checkbox], div.actions label.inline input[type=checkbox] {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAoCAYAAAD+MdrbAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAWtJREFUeNrslU2LglAUhl/lUou2LhWCdubGsk1B/oKZHzvTDwgEd4lFm0Aoog8XgpswXVjTvaD0Nc2YzjAMvosr5yIP77n33HO44/GIIkXownHcSxGwk7l3cha85YGdTL3SL4+CVQJLYAksgb8DJNf9LK+4okfAz6T8v2dKGIbFnOHhcIBlWRiNRvmBcRxjOBxiOp2iWq3er8MMB89g6/WaxZVKJZ9D6iqBUe33++eBruvCtu2bvadSjqIIhmHg/GU1Gg10Op2vHXqeh8FggOVyme5NJpOL9FRVRa/XuzlDcu2CloHjOCwej8eQJAm73Q6z2Sz9r91uo9lsPu42VNvtFpvNJo1938d8PsdqtWJ1RyXL8qewG2C9XocoijBNE4vFgu3R4k1SFQQBrVYrW7chhKDf70NRFBYHQcAughawruvgef659kWd0PQSdbtd1Gq173fse9I0LX239HIyjYBH0Cxd/e/PlA8BBgA6gpuyV9X9zQAAAABJRU5ErkJggg==) top left no-repeat;
+}
+/* line 62, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/forms.css.scss.erb */
+fieldset label.inline input[type=checkbox]:checked, div.field label.inline input[type=checkbox]:checked, div.actions label.inline input[type=checkbox]:checked {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAoCAYAAAD+MdrbAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAWtJREFUeNrslU2LglAUhl/lUou2LhWCdubGsk1B/oKZHzvTDwgEd4lFm0Aoog8XgpswXVjTvaD0Nc2YzjAMvosr5yIP77n33HO44/GIIkXownHcSxGwk7l3cha85YGdTL3SL4+CVQJLYAksgb8DJNf9LK+4okfAz6T8v2dKGIbFnOHhcIBlWRiNRvmBcRxjOBxiOp2iWq3er8MMB89g6/WaxZVKJZ9D6iqBUe33++eBruvCtu2bvadSjqIIhmHg/GU1Gg10Op2vHXqeh8FggOVyme5NJpOL9FRVRa/XuzlDcu2CloHjOCwej8eQJAm73Q6z2Sz9r91uo9lsPu42VNvtFpvNJo1938d8PsdqtWJ1RyXL8qewG2C9XocoijBNE4vFgu3R4k1SFQQBrVYrW7chhKDf70NRFBYHQcAughawruvgef659kWd0PQSdbtd1Gq173fse9I0LX239HIyjYBH0Cxd/e/PlA8BBgA6gpuyV9X9zQAAAABJRU5ErkJggg==) bottom left no-repeat;
+}
+/* line 66, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/forms.css.scss.erb */
+fieldset label.inline input[type=radio], fieldset label.inline input[type=checkbox], div.field label.inline input[type=radio], div.field label.inline input[type=checkbox], div.actions label.inline input[type=radio], div.actions label.inline input[type=checkbox] {
+  outline: none;
+  position: relative;
+  top: 0.3em;
+}
+/* line 73, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/forms.css.scss.erb */
+fieldset legend, div.field legend, div.actions legend {
+  background: #efefef;
+  color: #777;
+  padding: 0.5em;
+  -moz-border-radius: 0.25em;
+  -webkit-border-radius: 0.25em;
+  border-radius: 0.25em;
+}
+/* line 80, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/forms.css.scss.erb */
+fieldset select, div.field select, div.actions select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAH1JREFUeNqkUTsKwCAMNaGDk4qDoGcQZwdHj+1pHLyFpE6l1P5o3xRCHu8TICL2Fch+YNmmUkpr7fSIc55Scs4d9rC3PfMBwBjjvbfWIuIdeeYrpYam1vpV5pzzZk8IEUIY/KvMcNr20O+9xxillHeN0QVqrfQE+PPnVYABAAwmZGpbdzcOAAAAAElFTkSuQmCC) 100% 50% no-repeat white;
+  border: 1px solid #ccc;
+  line-height: 1.25em;
+  min-width: 16em;
+  padding: 0.5em 3em 0.5em 0.5em;
+  -moz-border-radius: 0.25em;
+  -webkit-border-radius: 0.25em;
+  border-radius: 0.25em;
+}
+/* line 92, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/forms.css.scss.erb */
+fieldset input[type=date], div.field input[type=date], div.actions input[type=date] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #ccc;
+  line-height: 1.25em;
+  padding: 0.5em;
+  -moz-border-radius: 0.25em;
+  -webkit-border-radius: 0.25em;
+  border-radius: 0.25em;
+}
+/* line 102, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/forms.css.scss.erb */
+fieldset span.error-details, div.field span.error-details, div.actions span.error-details {
+  color: #eb0000;
+  display: inline-block;
+  margin-left: 1em;
+}
+/* line 106, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/forms.css.scss.erb */
+fieldset span.error-details i, div.field span.error-details i, div.actions span.error-details i {
+  color: #eb0000;
+}
 
-div.notice {
-  background: #ecffd6;
-  border: 2px solid #8dff0a; }
-  div.notice i {
-    color: #73d600; }
-
-div.warning {
-  background: #fbefb9;
-  border: 2px solid #f3ce28; }
-  div.warning i {
-    color: #ab8e0a; }
-
-fieldset {
-  margin: 0; }
-  fieldset input[type=search] {
-    -webkit-appearance: none; }
-  fieldset input[type=search]::-webkit-search-decoration,
-  fieldset input[type=search]::-webkit-search-cancel-button,
-  fieldset input[type=search]::-webkit-search-results-button,
-  fieldset input[type=search]::-webkit-search-results-decoration {
-    display: none; }
-  fieldset input[type=text],
-  fieldset input[type=email],
-  fieldset input[type=tel],
-  fieldset input[type=number],
-  fieldset input[type=date],
-  fieldset input[type=search],
-  fieldset input[type=password] {
-    background: #fff;
-    border: 1px solid #ccc;
-    padding: 0.5em;
-    -moz-border-radius: 0.25em;
-    -webkit-border-radius: 0.25em;
-    border-radius: 0.25em; }
-  fieldset input.error {
-    border: 1px solid #ff8585; }
-  fieldset label {
-    display: block;
-    line-height: 2em; }
-  fieldset label.horizontal {
-    display: inline-block;
-    min-width: 16em; }
-  fieldset label.inline {
-    display: inline-block;
-    margin-right: 2em; }
-    fieldset label.inline input {
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      border: none;
-      display: inline-block;
-      float: left;
-      height: 20px;
-      margin-right: 1em;
-      width: 20px; }
-    fieldset label.inline input[type=radio] {
-      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAoCAYAAAD+MdrbAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAjVJREFUeNrsVb1OAkEQ3uOfXCCQaAQsDBQ2xMLkOhtaH8CeR/A17HwEel9DOxILrSwgEH4DCQRy4Z9zvnXv3BPN6bGxYpIJw/x8Nzszu6NZlsVUUug7paZpQfo5IT4iThHrwmQSj4mHxH1KZuMJSGDH9HNWqVRuDMO4yOVy54lEIgvbdDrtdjqdt2q1+lIulx/It0GgAxcAjmwz0SlxqVarPVoeBB/4IsaFIYEhs1K/33+1fknwFaDHLkAi1Mz4TWY/ZGoAQwbMUc3uLJ+EWGAAKyBKeYQG+B0VEYuJcABT6KZfQBGbkgF1ezT8kIjVZUBlZAOaGFq/ICLWlAHHuAF+AUXsWAYc4jr5BRSxQ+fqKR9s5VdP5eOgfX1g//J8kWrn+dK+e7H3eWA11StA+U057JTdwV6v1xZlxhmy12DzLouaXdJX7/P5/JWdfa/XY6PRiM3nc/4/FouxdDrNMpmMc8J6vf5UKBRuSXxGTe0un6BmMliz2WSNRoO1Wi3Wbrc5Q4YONpsQg1jRRKcprp2CzLrdLhsMBsw0TUZH/ehgKMQWiwWXI5GIk6m0Uzo7O2Wz2fBjTiYTDrZarbgODBk62OADnedOmc1mvGbIBJltt1vneJChgw0+8P3/nRKPx3k3o9Eor1kg8PlNyNDBBh/4eu6UYDDIRyOZTDJd11k4HOY6MGToYIMPdF93SkjeKcVi8Rp/0L3lcskNyMbuLGSAZbNZ1yzKO0X5YCu/eoedsj+9CzAANMf9yP7GAVkAAAAASUVORK5CYII=) top left no-repeat; }
-    fieldset label.inline input[type=radio]:checked {
-      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAoCAYAAAD+MdrbAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAjVJREFUeNrsVb1OAkEQ3uOfXCCQaAQsDBQ2xMLkOhtaH8CeR/A17HwEel9DOxILrSwgEH4DCQRy4Z9zvnXv3BPN6bGxYpIJw/x8Nzszu6NZlsVUUug7paZpQfo5IT4iThHrwmQSj4mHxH1KZuMJSGDH9HNWqVRuDMO4yOVy54lEIgvbdDrtdjqdt2q1+lIulx/It0GgAxcAjmwz0SlxqVarPVoeBB/4IsaFIYEhs1K/33+1fknwFaDHLkAi1Mz4TWY/ZGoAQwbMUc3uLJ+EWGAAKyBKeYQG+B0VEYuJcABT6KZfQBGbkgF1ezT8kIjVZUBlZAOaGFq/ICLWlAHHuAF+AUXsWAYc4jr5BRSxQ+fqKR9s5VdP5eOgfX1g//J8kWrn+dK+e7H3eWA11StA+U057JTdwV6v1xZlxhmy12DzLouaXdJX7/P5/JWdfa/XY6PRiM3nc/4/FouxdDrNMpmMc8J6vf5UKBRuSXxGTe0un6BmMliz2WSNRoO1Wi3Wbrc5Q4YONpsQg1jRRKcprp2CzLrdLhsMBsw0TUZH/ehgKMQWiwWXI5GIk6m0Uzo7O2Wz2fBjTiYTDrZarbgODBk62OADnedOmc1mvGbIBJltt1vneJChgw0+8P3/nRKPx3k3o9Eor1kg8PlNyNDBBh/4eu6UYDDIRyOZTDJd11k4HOY6MGToYIMPdF93SkjeKcVi8Rp/0L3lcskNyMbuLGSAZbNZ1yzKO0X5YCu/eoedsj+9CzAANMf9yP7GAVkAAAAASUVORK5CYII=) bottom left no-repeat; }
-    fieldset label.inline input[type=checkbox] {
-      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAoCAYAAAD+MdrbAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAWtJREFUeNrslU2LglAUhl/lUou2LhWCdubGsk1B/oKZHzvTDwgEd4lFm0Aoog8XgpswXVjTvaD0Nc2YzjAMvosr5yIP77n33HO44/GIIkXownHcSxGwk7l3cha85YGdTL3SL4+CVQJLYAksgb8DJNf9LK+4okfAz6T8v2dKGIbFnOHhcIBlWRiNRvmBcRxjOBxiOp2iWq3er8MMB89g6/WaxZVKJZ9D6iqBUe33++eBruvCtu2bvadSjqIIhmHg/GU1Gg10Op2vHXqeh8FggOVyme5NJpOL9FRVRa/XuzlDcu2CloHjOCwej8eQJAm73Q6z2Sz9r91uo9lsPu42VNvtFpvNJo1938d8PsdqtWJ1RyXL8qewG2C9XocoijBNE4vFgu3R4k1SFQQBrVYrW7chhKDf70NRFBYHQcAughawruvgef659kWd0PQSdbtd1Gq173fse9I0LX239HIyjYBH0Cxd/e/PlA8BBgA6gpuyV9X9zQAAAABJRU5ErkJggg==) top left no-repeat; }
-    fieldset label.inline input[type=checkbox]:checked {
-      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAoCAYAAAD+MdrbAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAWtJREFUeNrslU2LglAUhl/lUou2LhWCdubGsk1B/oKZHzvTDwgEd4lFm0Aoog8XgpswXVjTvaD0Nc2YzjAMvosr5yIP77n33HO44/GIIkXownHcSxGwk7l3cha85YGdTL3SL4+CVQJLYAksgb8DJNf9LK+4okfAz6T8v2dKGIbFnOHhcIBlWRiNRvmBcRxjOBxiOp2iWq3er8MMB89g6/WaxZVKJZ9D6iqBUe33++eBruvCtu2bvadSjqIIhmHg/GU1Gg10Op2vHXqeh8FggOVyme5NJpOL9FRVRa/XuzlDcu2CloHjOCwej8eQJAm73Q6z2Sz9r91uo9lsPu42VNvtFpvNJo1938d8PsdqtWJ1RyXL8qewG2C9XocoijBNE4vFgu3R4k1SFQQBrVYrW7chhKDf70NRFBYHQcAughawruvgef659kWd0PQSdbtd1Gq173fse9I0LX239HIyjYBH0Cxd/e/PlA8BBgA6gpuyV9X9zQAAAABJRU5ErkJggg==) bottom left no-repeat; }
-  fieldset legend {
-    background: #efefef;
-    color: #777;
-    padding: 0.5em;
-    -moz-border-radius: 0.25em;
-    -webkit-border-radius: 0.25em;
-    border-radius: 0.25em; }
-  fieldset select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAH1JREFUeNqkUTsKwCAMNaGDk4qDoGcQZwdHj+1pHLyFpE6l1P5o3xRCHu8TICL2Fch+YNmmUkpr7fSIc55Scs4d9rC3PfMBwBjjvbfWIuIdeeYrpYam1vpV5pzzZk8IEUIY/KvMcNr20O+9xxillHeN0QVqrfQE+PPnVYABAAwmZGpbdzcOAAAAAElFTkSuQmCC) 100% 50% no-repeat white;
-    border: 1px solid #ccc;
-    line-height: 1.25em;
-    min-width: 16em;
-    padding: 0.5em 3em 0.5em 0.5em;
-    -moz-border-radius: 0.25em;
-    -webkit-border-radius: 0.25em;
-    border-radius: 0.25em; }
-  fieldset input[type=date] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: 1px solid #ccc;
-    line-height: 1.25em;
-    padding: 0.5em;
-    -moz-border-radius: 0.25em;
-    -webkit-border-radius: 0.25em;
-    border-radius: 0.25em; }
-  fieldset span.error-details {
-    color: #eb0000;
-    display: inline-block;
-    margin-left: 1em; }
-    fieldset span.error-details i {
-      color: #eb0000; }
-
-fieldset > div {
+/* line 113, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/forms.css.scss.erb */
+fieldset > div, div.field > div, div.actions > div {
   overflow: hidden;
-  padding: 0.5em; }
+  padding: 0.5em;
+}
 
+/* line 120, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/forms.css.scss.erb */
+form .field br {
+  display: none;
+}
+
+/* line 126, /Users/kelli/Dropbox/www/my-gems/feathers/app/assets/stylesheets/forms.css.scss.erb */
 input[type=reset], input[type=submit], input[type=button] {
   display: inline-block;
+  border: 1px solid #a3a3a3;
+  display: inline-block;
+  line-height: 1.5em;
+  padding: 0.25em 0.5em;
+  background-color: #efefef;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(#d5d5d5));
+  background-image: -webkit-linear-gradient(top, #efefef, #d5d5d5);
+  background-image: -moz-linear-gradient(top, #efefef, #d5d5d5);
+  background-image: -ms-linear-gradient(top, #efefef, #d5d5d5);
+  background-image: -o-linear-gradient(top, #efefef, #d5d5d5);
+  background-image: linear-gradient(top, #efefef, #d5d5d5);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor);
+  -moz-border-radius: 0.25em;
+  -webkit-border-radius: 0.25em;
+  border-radius: 0.25em;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -moz-tap-highlight-color: rgba(0, 0, 0, 0);
   -o-tap-highlight-color: rgba(0, 0, 0, 0);
-  tap-highlight-color: rgba(0, 0, 0, 0); }
+  tap-highlight-color: rgba(0, 0, 0, 0);
+}
