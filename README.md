@@ -63,12 +63,6 @@ Then simply override the Feathers color presets. You can change any or all value
 
 Borders and gradients are calculated automatically based on the defined values for their element.
 
-ToDo
-----
-
-* Currently checkbox, radio buttons, and select box stylings are webkit only
-* JavaScript for better handling of tap states for touch events (`:hover` isn't always accurate)
-
 Changes
 ----
 
