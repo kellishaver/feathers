@@ -69,7 +69,7 @@ Changes
 ####v0.2.0
 * Cleaned up typography / resets
 * Headings now use Apple system default font where available
-* Placeholders or all icons, instead of Font Awesome
+* Styles for placeholders for demo purposes on icons, instead of Font Awesome - Font Awesome is still fully supported, but not required for demoing things now
 * Restyled dropdown menu slighlty
 * Restyled horizontal nav bar
 * Toned down border radi on all menus
