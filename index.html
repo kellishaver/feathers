@@ -623,18 +623,14 @@
     <pre><code>module Feathers
       class Config
 
-        @light_1 = "#efefef"
-        @light_2 = "#ddd"
-        @medium_1 = "#ccc"
-        @medium_2 = "#aaa"
-        @dark_1 = "#777"
-        @dark_2 = "#444"
+        @light = "#efefef"
+        @medium = "#ccc"
+        @dark = "#777"
         @highlight = "#ffe"
         @notice_background = "#ecffd6"
         @warning_background = "#fbefb9"
         @error_background = "#ffebeb"
         @note_background = "#d8f2ff"
-        @default_element = "#ccc"
         @danger_element = "#cf0404"
         @info_element = "#448ccb"
         @success_element = "#7ba900"
@@ -646,14 +642,6 @@
     end</code></pre>
 
     <p>Borders and gradients are calculated automatically based on the defined values for their element.</p>
-    <hr>
-    <h2>ToDo</h2>
-
-    <ul>
-        <li>Currently checkbox, radio buttons, and select box stylings are webkit only</li>
-        <li>View Helpers for various Feathers elements</li>
-        <li>JavaScript for better handling of tap states for touch events (<code>:hover</code> isn't always accurate)</li>
-    </ul>
   </div>
   <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
   <script type="text/javascript">
